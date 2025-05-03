@@ -1564,7 +1564,7 @@ const scriptData = [
     id: 530,
     title: "",
     text: "머피 : 손에 든 건 기타 케이스랑 ‘베타니아 폰타나’ 정도면 충분하겠네.",
-    choices: [{}],
+    choices: [],
   },
 ];
 
