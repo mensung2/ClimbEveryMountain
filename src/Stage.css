@@ -1,0 +1,149 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.script-box {
+    width: 650px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    line-height: 160%;
+    background-color: #000;
+    color: #ddd;
+    box-shadow: 2px 2px 100px 5px rgba(255, 255, 255, 0.14);
+    overflow: hidden;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    animation: growUp 0.5s forwards ease-out;
+    animation-delay: 1s;
+}
+
+@media (max-width: 760px) {
+    .script-box {
+        width: 68vw;
+        height: 35vh;
+
+    }
+}
+
+@keyframes growUp {
+    from {
+        transform: scaleY(0);
+    }
+
+    to {
+        transform: scaleY(1);
+    }
+}
+
+.script {
+    width: 570px;
+    height: 620px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    opacity: 0;
+    animation: fadeIn 1s forwards ease-out;
+    animation-delay: 2s;
+    min-height: 100px;
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 760px) {
+    .script {
+        width: 62vw;
+        height: 30vh;
+        font-size: small;
+        line-height: 160%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+.script-text {
+    margin-bottom: 16px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.script {
+    -ms-overflow-style: none;
+}
+
+.script::-webkit-scrollbar {
+    display: none;
+}
+
+.script-text {
+    margin-bottom: 20px;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+
+@media (max-width: 760px) {
+    .script-text {
+        margin-bottom: 8px;
+    }
+}
+
+.choice {
+    cursor: pointer;
+    color: #df9F33;
+    font-weight: bold;
+    margin-bottom: 12px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+@media (max-width: 760px) {
+    .choice {
+        margin-bottom: 4px;
+    }
+}
+
+
+.choice.center {
+    text-align: center;
+}
+
+.choice.left {
+    text-align: left;
+}
+
+.choice:hover {
+    color: #1dde98;
+}
+
+@font-face {
+    font-family: 'KimjungchulMyungjo';
+    src: url('./assets/KimjungchulMyungjo-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.story-container {
+    font-family: 'KimjungchulMyungjo', serif;
+}
