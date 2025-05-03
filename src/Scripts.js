@@ -143,7 +143,6 @@ function Scripts({ initialId, setCurrentId, setSplashText, setSplash }) {
     const nextLine = scriptData.find((line) => line.id === nextId);
 
     if (nextLine) {
-      // splash 처리 조건: title은 없고, choices에 "o" 있음
       const autoSplash = nextLine.choices?.find((c) => c.text === "o");
 
       if (autoSplash) {
@@ -156,7 +155,6 @@ function Scripts({ initialId, setCurrentId, setSplashText, setSplash }) {
         return;
       }
 
-      // 일반 처리
       setSelectedChoices((prev) => ({
         ...prev,
         [history[history.length - 1].id]: nextId,
